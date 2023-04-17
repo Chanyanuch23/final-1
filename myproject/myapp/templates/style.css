@@ -44,11 +44,7 @@ a{
     flex-basis: 100%;
     min-width: 300px;
 }
-/* ปรับขนาดขแง img */
-.col-2 img{
-    max-width: 100%;
-    padding: 50px 0;
-}
+/* ปรับขนาดของ img */
 .col-2 h1{
     font-size: 50px;
     line-height: 60px;
@@ -56,12 +52,14 @@ a{
     margin-left: 50px;
 }
 .col-2 p{
-    font-size: 25px;
+    font-size: 22px;
     line-height: 30px;
     margin: 25px 0;
     margin-left: 50px;
 }
+
 /*click! */
+
 .btn{
     display: inline-block;
     background:rgb(255, 94, 193);
@@ -145,65 +143,121 @@ h4{
     background: white;
     margin-top: 80px;
     padding: 30px 0;
+    position: relative;
 }
-.offer .col-2 img{
+.offer-img{
+    display: block;
+    margin-left: 32rem;
+    width: 50%;
     max-width: 1080px;
     min-width: 200px;
+}
+.offer .col-2-detail{
+    text-align: left;
+    margin-right: 35rem;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    flex-basis: 45%;
+    transform: translate(-50%, -50%); 
+    z-index: 1;  
 }
 small{
     color: rgb(56, 2, 2);
 }
-.offer .col-2 a{
+.offer .col-2-detail p{
+    font-size: 38px;
+}
+.offer .col-2-detail a{
     display: inline-block;
     background:rgb(255, 94, 193);
     color: rgb(203, 255, 143);
     padding: 8px 30px;
     margin: 30px 0;
-    margin-left: 50px;
+    margin-left: 20%;
     border-radius: 30px;
     transition: background 0.5s;
 }
 .offer .col-2 a:hover{
     background: black;
 }
+
 /* -------footer------- */
-.footer{
-    background: radial-gradient(rgb(189, 247, 255),white,rgb(255, 255, 177));
-    color: rgb(86, 77, 5);
-    font-size: 14px;
-    padding: 60px 0 20px;
+
+#footer{
+    padding: 100px 0 20px;
+    background: radial-gradient(#ffd1d1,white);
+    position: relative;
 }
-.footer-col-1 img{
-    width: 50px;
-    height: 50px;
-    align-content: center;
-    
+.title-text{
+    text-align: center;
+    margin-bottom: 50px;
 }
-.footer p{
+.footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left, .footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.footer-right{
+    text-align: right;
+}
+.footer-row h1{
+    margin: 10px 0;
+}
+.footer-row p{
+    line-height: 25px;
+}
+.footer-img{
+    max-width: 250px;
+    bottom: 60px;
+    opacity: 0.1;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.social-links{
     text-align: center;
 }
-.footer hr{
-    border: none;
-    background: rgb(12, 11, 11);
-    height: 1px;
-    margin: 20px 0;
+.social-links .fa{
+    font-size: 20px;
+    line-height: 40px;
+    margin: 50px 10px 5px 0;
+    color: green;
+    cursor: pointer;
+    transition: .5s;
 }
-.Copyright{
-    text-align: center;
+.social-links .fa:hover{
+    background: green;
+    color: red;
+    transform: translateY(-7);
 }
-.menu-icon{
-    width: 25px;
-    margin-left: 10px;
-    transform: none;
+.social-links p{
+    font-size: 12px;
+    margin-top: 30px;
 }
+
 /* --------all products------- */
+
 .row-2{
     justify-content: space-between;
     margin: 100px auto 50px;
 }
 select{
-    border-radius: 2px solid #3b62ff;
+    border-radius: 2px solid #152a7c;
     padding: 5px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
 }
 select:focus{
     outline:none
@@ -224,6 +278,7 @@ select:focus{
 .page-btn span:hover{
     background: rgb(255, 103, 179);
 }
+
 /* -------account-page-------- */
 .account-page{
     padding: 50px 0;
@@ -261,7 +316,7 @@ form input{
     height: 30px;
     margin: 10px 0;
     padding: 0 10px;
-    border: 1px solid #050000;
+    border: 1px solid #884949;
 }
 form .btn{
     width: 100%;
@@ -284,34 +339,32 @@ form a{
 .small-container col-2{
     text-align: rigth;
 }
+
 /* -------single product details--------- */
+
 .small-container .col-2 img{
-    width: 60%;
+    width: 50%;
     padding: 0;
 }
 .single-product{
-    margin-top: 80px;
-}
-.single-product .col-2{
-    padding: 10px;
-
+    margin-top: 75px;
 }
 .single-product h4{
-    margin: 0 50px;
+    /* margin: 0; */
     font-size: 22px;
     font-weight: bold;
 }
 .single-product select{
-    margin: 0 50px;
+    /* margin: 0 ; */
     display: block;
     padding: 10px;
     margin-top: 20px;
 }
 .single-product input{
-    margin: 0 50px;
+    /* margin: 0; */
     width: 50px;
     height: 40px;
-    padding-left: 10px;
+    /* padding-left: 0px; */
     font-size: 20px;
     margin-right: 10px;
     border: 1px solid pink;
@@ -320,20 +373,67 @@ input:focus{
     outline: none;
 }
 .small-img-row{
-    padding: 0 0 10px;
+    /* padding: 0 0 20px; */
     display: flex;
-    justify-content:space-between;
-    
-
+    justify-content:center;
 }
 .small-img-col{
     flex-basis: 50%;
     cursor: pointer;
+    margin: 0 0 10px;
+    max-width: 100%;
+} 
+.single-product .col-2-top{
+    width: 25%;
+    margin: 30px;
+    height: 85%;
+    color: rgb(9, 78, 43);
+    text-align: left;
+    position: absolute;
+    top: 85%;
+    left: 65%;
+    transform: translate(-50%, -50%); 
+    z-index: 1;
 }
-.row .row-2 p{
+.size{
+    width: 100%;
+}
+.size .select{
+    display: flex;
+    height: 55px;
+    border: 1px solid #ba5757;
+    padding: 20px;
     cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
 }
-
+.size .option-list{
+    position: relative;
+    padding: 20px;
+    margin-top: 2px;
+    background:#a23333 ;
+    border: 1px solid pink;
+    display: none;
+}
+.size .click .option-list{
+    display: block;
+}
+.option-list .option{
+    display: table;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+.qty input{
+    padding: 20px;
+    width: 100px;
+    outline: none;
+    font-size: 20px;
+}
+.single-product .col-2{
+    padding-top: 20px;
+}
 /* ------Top-------- */
 .top{
     margin-top: 80px;
@@ -373,6 +473,14 @@ input:focus{
         display: block;
         cursor: pointer;
     }
+    .footer-left, .footer-right{
+        flex-basis: 100%;
+        font-size: 14px;
+    }
+    .footer-img{
+        top: 25%;
+
+    }
 }
 /* ---media query for less than 600 screen size-- */
 @media only screen and (max-width: 600px){
@@ -392,4 +500,5 @@ input:focus{
         font-size: 26px;
         line-height: 32px;
     }
+
 }
