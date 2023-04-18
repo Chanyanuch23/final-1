@@ -377,16 +377,20 @@ input:focus{
     outline: none;
 }
 .small-img-row{
-    /* padding: 0 0 20px; */
+    padding: 0 0 20px;
     display: flex;
     justify-content:center;
 }
 .small-img-col{
     flex-basis: 50%;
+    margin: auto;
     cursor: pointer;
-    margin: 0 0 10px;
-    max-width: 100%;
+    max-width: 50%;
+    margin-right: -250px;
+    padding: 0;
+    
 } 
+
 .single-product .col-2-top{
     width: 25%;
     margin: 30px;
@@ -394,7 +398,7 @@ input:focus{
     color: rgb(9, 78, 43);
     text-align: left;
     position: absolute;
-    top: 80%;
+    top: 100%;
     left: 65%;
     transform: translate(-50%, -50%); 
     z-index: 1;

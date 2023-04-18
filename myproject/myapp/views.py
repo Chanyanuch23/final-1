@@ -33,3 +33,29 @@ def reg_view(request):
 
    return render(request, "account.html", {'form':form})
 
+def Home(request):
+    return render(request,'index.html', {'Home':Home})
+
+def about(request):
+    return render(request, "about.html", {'about':about})
+
+def account(request):
+    return render(request, "account.html", {'account':account})
+
+def cart(request):
+    return render(request, "cart.html", {'cart':cart}) 
+
+def productdetail(request):
+    return render(request, "product-detail.html", {'productdetail':productdetail}) 
+
+def products(request):
+    return render(request, "products.html", {'products':products})
+
+def top(request):
+    return render(request, "top.html", {'top':top})
+
+
+
+
+
+
