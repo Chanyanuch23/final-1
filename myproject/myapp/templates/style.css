@@ -14,7 +14,7 @@ body{
 nav{
     flex: 1;
     text-align: right;
-}
+}l
 nav ul{
     display: inline-block;
     list-style-type: none;
@@ -27,6 +27,9 @@ nav ul li{
 a{
     text-decoration: none;
     color: rgb(200, 39, 138);
+}
+.cart-img{
+    cursor: pointer;
 }
 .container{
     max-width: 1300px;
@@ -217,7 +220,7 @@ small{
 .footer-img{
     max-width: 250px;
     bottom: 60px;
-    opacity: 0.1;
+    opacity: 0.2;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -358,7 +361,8 @@ form a{
     /* margin: 0 ; */
     display: block;
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 50px;
+    
 }
 .single-product input{
     /* margin: 0; */
@@ -390,7 +394,7 @@ input:focus{
     color: rgb(9, 78, 43);
     text-align: left;
     position: absolute;
-    top: 85%;
+    top: 80%;
     left: 65%;
     transform: translate(-50%, -50%); 
     z-index: 1;
@@ -441,12 +445,23 @@ input:focus{
 .top col-4{
     margin-top: 10px;
 }
+/* --------cart------ */
+.cart {
+    margin-top: 80px;
+}
 
 
+/* ----------about----------- */
+.about{
+    margin-top: 80px;
+    padding: 5px;
 
-
-
-
+}
+.about .col-2 p{
+    text-indent: 20px;
+    font-size: 20px;
+    font-weight: normal;
+}
 
 /* -------media query for menu --- */
 @media only screen and (max-width: 800px){

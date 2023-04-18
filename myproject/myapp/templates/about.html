@@ -20,13 +20,13 @@
                 <div class="navbar">
                     <div class="logo">
                         <a href="index.html">
-                        <img src="file:///Users/panichataechasettakul/Downloads/MagicEraser_5660418_164818.PNG" width="125px"></a>
+                        <img src="https://profile.line-scdn.net/0h1HrAFRmabmdPOHiFcB8RMHN9YAo4FmgvNwkjADgxMwM1CCs5cAolBGhvMABmASAxIFhzUW1tMwRk" width="125px"></a>
                     </div>
                     <nav>
                         <ul id="MenuItems">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="products.html">Products</a></li>
-                            <li><a href="about.html">About</a></li>
+                            <li><a href="">About</a></li>
                             <li><a href="account.html">Account</a></li>
                         </ul>
                     </nav>
@@ -37,36 +37,25 @@
             </div>
 
         </div>
-<!-- ---------account page--------- -->
-        <div class="account-page">
-            <div class="container">
+
+<!-- ----------about---------- -->
+            <div class="small-container about">
+
                 <div class="row">
                     <div class="col-2">
-                        <div class="form-container">
-                            <div class="form-btn">
-                                <span onclick="login()">Login</span>
-                                <span onclick="register()">Register</span>
-                            </div>
-                            
-                            <form id="LoginForm" method="post">
-                                <input type="text" placeholder="Username">
-                                <input type="text" placeholder="Password">
-                                <button type="submit" class="btn">Login</button>
-                                <a href="">Forgot password</a>
-                            </form>
+                        <h2>About</h2>
+                    </div>
 
-                            <form id="RegForm" method="post">
-                                <input type="text" placeholder="Username">
-                                <input type="text" placeholder="Email">
-                                <input type="text" placeholder="Password">
-                                <button type="submit" class="btn">Register</button>
-                            </form>
-
-                        </div>
+                    <div class="col-2">
+                        <p>Welcome to our shopping website, where we specialize in providing cute and trendy clothes for fashion-forward individuals like you. We believe that fashion should be fun, effortless, and always make you feel confident and beautiful.</p>
+                        <p>Our team of passionate fashion enthusiasts is dedicated to bringing you the latest styles and trends in women's clothing, from chic dresses and versatile tops to cozy knitwear and stylish accessories. We handpick each item in our collection to ensure that it meets our high standards of quality, comfort, and style.</p>
+                        <p>At our shopping website, we believe that everyone deserves to look and feel their best, which is why we offer a wide range of sizes to fit all body types. Whether you're dressing up for a special occasion or looking for casual everyday wear, we've got you covered.</p>
+                        <p>Thank you for choosing us as your go-to destination for cute clothes. We hope that you find something that speaks to your unique style and personality, and that you feel amazing wearing it. Happy shopping!</p>
                     </div>
                 </div>
+
+
             </div>
-        </div>
 
 <!-- -----footer---- -->
             <section id="footer">
@@ -96,27 +85,3 @@
             </div>
 
             </section>
-<!-- ---------js for toggle form--------- -->
-        <script>
-
-            var LoginForm = document.getElementById("LoginForm");
-            var RegForm = document.getElementById("RegForm");
-
-                function login(){
-                    RegForm.style.transform = "translateX(300px)";
-                    LoginForm.style.transform = "translateX(300px)";
-                }
-
-                function register(){
-                    RegForm.style.transform = "translateX(0px)";
-                    LoginForm.style.transform = "translateX(0px)";
-                }
-
-                
-        </script>
-
-
-
-    <script src="script.js"></script>
-</body>
-</html>
