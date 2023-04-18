@@ -9,7 +9,7 @@ body{
 .navbar{
     display: flex;
     align-items: center;
-    padding: 20px;
+    top: 10px;
 }
 nav{
     flex: 1;
@@ -18,11 +18,16 @@ nav{
 nav ul{
     display: inline-block;
     list-style-type: none;
+    margin-bottom: 70px;
 }
 nav ul li{
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 25px;
 }
+li .bar{
+    bottom: 50px;
+}
+
 /* color for menu bar */
 a{
     text-decoration: none;
@@ -82,9 +87,10 @@ a{
 }
 .header row{
     margin-top: 70px;
+    padding: 5px;
 }
 .categories{
-    margin-top: 70px;
+    margin-top: 50px;
 }
 .col-3{
     flex-basis: 30%;
@@ -251,7 +257,8 @@ small{
 
 .row-2{
     justify-content: space-between;
-    margin: 100px auto 50px;
+    margin-top: 80px;
+    padding: 5px;
 }
 select{
     border-radius: 2px solid #152a7c;
@@ -379,18 +386,19 @@ input:focus{
 .small-img-row{
     padding: 0 0 20px;
     display: flex;
-    justify-content:center;
+    justify-content:space-between;
 }
 .small-img-col{
     flex-basis: 50%;
     margin: auto;
     cursor: pointer;
-    max-width: 50%;
-    margin-right: -250px;
-    padding: 0;
-    
+    max-width: 100%;
 } 
-
+.small-img{
+    margin-right: -200px;
+    transform: translate(0 0); 
+    
+}
 .single-product .col-2-top{
     width: 25%;
     margin: 30px;
@@ -439,9 +447,7 @@ input:focus{
     outline: none;
     font-size: 20px;
 }
-.single-product .col-2{
-    padding-top: 20px;
-}
+
 /* ------Top-------- */
 .top{
     margin-top: 80px;
@@ -450,10 +456,17 @@ input:focus{
     margin-top: 10px;
 }
 /* --------cart------ */
-.cart {
+.add-cart {
     margin-top: 80px;
 }
-
+.cart{
+    position: relative;
+}
+.cart-title{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
 
 /* ----------about----------- */
 .about{

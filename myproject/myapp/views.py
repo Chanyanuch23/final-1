@@ -54,6 +54,9 @@ def products(request):
 def top(request):
     return render(request, "top.html", {'top':top})
 
+def logout(request):
+    return render(request, "logout.html", {'logout':logout})
+
 
 
 

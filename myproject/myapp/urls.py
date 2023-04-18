@@ -27,4 +27,5 @@ urlpatterns = [
     path('product-detail/', views.productdetail, name='productdetail'),
     path('products/', views.products, name='products'),
     path('top/', views.top, name='top'),
+    path('logout/', views.logout, name='logout'),
 ]
