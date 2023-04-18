@@ -32,3 +32,4 @@ def reg_view(request):
        form = RegForm() 
 
    return render(request, "account.html", {'form':form})
+
