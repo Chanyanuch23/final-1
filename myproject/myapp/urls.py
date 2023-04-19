@@ -28,4 +28,6 @@ urlpatterns = [
     path('products/', views.products, name='products'),
     path('top/', views.top, name='top'),
     path('logout/', views.logout, name='logout'),
+    # path('category/', views.CategoryView.as_view(),name='category'),
+    # path('product-detail/<int:pk>', views.Productdetail.as_view(),name='product-detail')
 ]
